@@ -18,7 +18,7 @@ class TravelsTableSeeder extends Seeder
             $newTravel = new Travel();
             $newTravel->destinazione = $faker->word();
             $newTravel->partenza = $faker->date();
-            $newTravel->prezzo = $faker->numberBetween(200-500);
+            $newTravel->prezzo = $faker->numberBetween(200, 500);
             $newTravel->ritorno = $faker->date();
             $newTravel->save();
         }
